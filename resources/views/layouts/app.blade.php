@@ -29,16 +29,17 @@
             <script src="{{ asset('js/app.js') }}" defer></script>
         </head>
         <body class="font-sans antialiased">
+        <h3>
             <div class="min-h-screen bg-gray-100">
                 @include('layouts.navigation')
-
+       
                 <!-- barra navegacion -->
                 <nav class="navbar navbar-dark bg-dark">
                     <!-- Navbar content -->
                     </nav>
-                
+                <h3>
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="{{url('/')}}">Hotel La Rivera</a>
+                    <a class="navbar-brand" href="{{url('/prueba')}}">Pizzeria Heily's</a>
                     
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -49,10 +50,9 @@
                         
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Hotel
+                                Nuestra Pizzeria
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="{{url('/hotel/historia')}}">Historia</a>
                                 <a class="dropdown-item" href="{{url('/hotel/mision-vision')}}">Mision y vision</a>
                                 <a class="dropdown-item" href="{{url('/hotel/ubicación')}}">Ubicacion</a>
                                 </div>
@@ -60,11 +60,11 @@
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Servicios
+                                Carta Menu
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item"  href="{{url('/servicios/habitaciones')}}">habitaciones</a>
-                                <a class="dropdown-item"  href="{{url('/servicios/eventos/{id}')}}">Eventos</a>
+                                <a class="dropdown-item"  href="{{url('/servicios/habitaciones')}}">Pizzas</a>
+                                <a class="dropdown-item"  href="{{url('/servicios/eventos/{id}')}}">Lasagna</a>
                                 </div>
                             </li>
 
@@ -99,10 +99,9 @@
                 </div>
             </div>
 
-            
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="{{ url('/assets/bootstrap/js/bootstrap.min.js')}}"></script>
-
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="{{ url('/assets/bootstrap/js/bootstrap.min.js')}}"></script>
+        <h3>
         </body>
     </html>

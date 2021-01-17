@@ -1,8 +1,14 @@
+<a href="/">
+            <img src="https://boston-pizzas.com/img/sites/boston-pizzas.com-banner.jpg?w=2000&h=200&fit=crop&1568633703">
+            </a>
+
+
 <x-guest-layout>
+
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+            <img src="https://scontent.fclo7-1.fna.fbcdn.net/v/t1.0-9/95805761_118416429854260_5748332324286627840_o.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=AO5GOSZIcJsAX9eLf9z&_nc_ht=scontent.fclo7-1.fna&oh=05c754a05c32f396f1de8aa8d304e4f5&oe=60286A65" width="200" height="200">
             </a>
         </x-slot>
 
@@ -57,3 +63,5 @@
         </form>
     </x-auth-card>
 </x-guest-layout>
+
+     
