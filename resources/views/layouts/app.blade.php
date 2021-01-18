@@ -39,7 +39,7 @@
                     </nav>
                 <h3>
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="{{url('/prueba')}}">Pizzeria Heily's</a>
+                    <a class="navbar-brand" href="{{url('/Principal')}}">Pizzeria Heily's</a>
                     
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -53,8 +53,9 @@
                                 Nuestra Pizzeria
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="{{url('/hotel/mision-vision')}}">Mision y vision</a>
-                                <a class="dropdown-item" href="{{url('/hotel/ubicación')}}">Ubicacion</a>
+                                <a class="dropdown-item" href="{{url('/pizza/mision-vision')}}">Mision y vision</a>
+                                <a class="dropdown-item" href="{{url('/pizza/ubicación')}}">Ubicacion</a>
+                                <a class="dropdown-item" href="{{url('/pizza/contacto')}}">Contactos</a>
                                 </div>
                             </li>
 
@@ -63,8 +64,8 @@
                                 Carta Menu
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item"  href="{{url('/servicios/habitaciones')}}">Pizzas</a>
-                                <a class="dropdown-item"  href="{{url('/servicios/eventos/{id}')}}">Lasagna</a>
+                                <a class="dropdown-item"  href="{{url('/carta/pizza')}}">Pizzas</a>
+                                <a class="dropdown-item"  href="{{url('/carta/lasagna')}}">Lasagna</a>
                                 </div>
                             </li>
 
@@ -73,21 +74,61 @@
                                 Clientes
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="{{url('clientes/visualizar')}}">Visualizar</a>
-                            
+                                <a class="dropdown-item" href="{{url('cliente/registrar')}}">Registrar</a>
+                                <a class="dropdown-item" href="{{url('cliente/actualizar')}}">Actualizar</a>
+                                <a class="dropdown-item" href="{{url('cliente/listar')}}">Listar </a>
+                     
+
                             </li>
 
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{url('/reservas ')}}">Reservas <span class="sr-only">(current)</span></a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Productos
+                                </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="{{url('productos/registrar')}}">Registrar </a>
+                                <a class="dropdown-item" href="{{url('productos/actualizar')}}">Actualizar </a>
+                                <a class="dropdown-item" href="{{url('productos/consultar')}}">Consultar</a>
+                                <a class="dropdown-item" href="{{url('productos/listar')}}">Listar </a>
+                                <a class="dropdown-item" href="{{url('productos/eliminar')}}">Eliminar</a>
+
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{url('/facturacion ')}}">Facturacion <span class="sr-only">(current)</span></a>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pedidos
+                                </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="{{url('pedidos/registrar')}}">Registrar </a>
+                                <a class="dropdown-item" href="{{url('pedidos/actualizar')}}">Actualizar </a>
+                                <a class="dropdown-item" href="{{url('pedidos/eliminar')}}">Eliminar</a>
+                                <a class="dropdown-item" href="{{url('pedidos/finalizar')}}">Finalizar</a>
+
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{url('/contáctos ')}}">Contactos <span class="sr-only">(current)</span></a>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Factura
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="{{url('factura/generar')}}">Generar </a>
+                                <a class="dropdown-item" href="{{url('factura/listar')}}">Listar </a>
+                                
                             </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Catalogo
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="{{url('catalogo/crear')}}">Crear </a>
+                                <a class="dropdown-item" href="{{url('catalogo/actualizar')}}">Actualizar </a>
+                                <a class="dropdown-item" href="{{url('catalogo/listar')}}">Listar </a>
+                                
+                            </li>
+
+                          
                         </ul>
                     </div>
                 </nav>
