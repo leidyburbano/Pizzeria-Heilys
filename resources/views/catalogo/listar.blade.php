@@ -3,10 +3,10 @@
 @section('content')
  <div class=" container">
  <h1>
- 
-    Listar Catalogo
+ <br>
+   
 
-    <h1> Categorias de Productos </h1>
+    <h1> Listado de nuestros productos</h1>
         <table class="table">
             <thead>
                 <tr>

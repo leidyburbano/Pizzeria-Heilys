@@ -69,10 +69,11 @@
       
 
         Route::get('catalogo/crear', [catalogoController::class, 'showCrear']);
+        Route::post('catalogo/crear', [catalogoController::class, 'registrar']);
       
         Route::get('catalogo/actualizar', [catalogoController::class, 'showActualizar']);
             
-        Route::get('catalogo/listar ', [catalogoController::class, 'showListar']);
+        Route::get('catalogo/listar ', [catalogoController::class, 'showListar']) ->name('listar');
 
 
         Route::get('carta/pizza', [cartaController::class, 'showPizza']);
