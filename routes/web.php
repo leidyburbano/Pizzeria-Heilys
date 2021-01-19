@@ -53,25 +53,23 @@
       
         Route::get('productos/eliminar', [productosController::class, 'showEliminarP']);
 
+        Route::get('productos/detalle ', [productosController::class, 'showDetalles']);
+        
 
-        Route::get('pedidos/registrar ', [pedidosController::class, 'showRegistrarPe']);
+        Route::get('factura/registrar ', [facturaController::class, 'showRegistrar']);
        
-        Route::get('pedidos/actualizar ', [pedidosController::class, 'showActualizarPe']);
+        Route::get('factura/actualizar ', [facturaController::class, 'showActualizar']);
       
-        Route::get('pedidos/eliminar', [pedidosController::class, 'showEliminarPe']);
+        Route::get('factura/eliminar', [facturaController::class, 'showEliminar']);
             
-        Route::get('pedidos/finalizar ', [pedidosController::class, 'showFinalizarPe']);
+        Route::get('factura/listar ', [facturaController::class, 'showListar']);
 
-
-        Route::get('factura/generar ', [facturaController::class, 'showGenerarF']);
-       
-        Route::get('factura/listar ', [facturaController::class, 'showListarF']);
       
 
         Route::get('catalogo/crear', [catalogoController::class, 'showCrear']);
         Route::post('catalogo/crear', [catalogoController::class, 'registrar']);
       
-        Route::get('catalogo/actualizar', [catalogoController::class, 'showActualizar']);
+        Route::get('catalogo/eliminar', [catalogoController::class, 'showEliminar']);
             
         Route::get('catalogo/listar ', [catalogoController::class, 'showListar']) ->name('listar');
 

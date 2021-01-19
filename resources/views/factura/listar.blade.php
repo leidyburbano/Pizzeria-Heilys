@@ -3,7 +3,7 @@
 @section('content')
  <div class=" container">
  <h1>
-    listar factura 
+    Listar Factura
   
 </h1>
 @endsection

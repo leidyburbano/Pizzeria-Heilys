@@ -27,6 +27,10 @@ class productosController extends Controller
     public function showEliminarP(){
         return view('productos.eliminar');
     }
+
+    public function showDetalles(){
+        return view('productos.detalle');
+    }
     
     
 }

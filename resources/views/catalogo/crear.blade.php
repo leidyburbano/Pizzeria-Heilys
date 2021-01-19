@@ -7,7 +7,7 @@
             <div class="container bg-danger">
 
                 <div class="card-body">
-                <img src="https://cdn.schlotzskys.com/-/media/schlotzskys/menu/pizza/bbq-chicken-and-jalapeno-pizza_2000x300.jpg?v=1&d=20180104T160611Z">
+                <img src="https://www.sanjhabazaar.com/wp-content/uploads/2020/09/pizza-fast-food-vegetables-2000x300.jpg">
                 <br>
                     <div class="jumbotron jumbotron-fluid">
                 

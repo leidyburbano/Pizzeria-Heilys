@@ -97,25 +97,16 @@
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Pedidos
+                                Factura                               
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="{{url('pedidos/registrar')}}">Registrar </a>
-                                <a class="dropdown-item" href="{{url('pedidos/actualizar')}}">Actualizar </a>
-                                <a class="dropdown-item" href="{{url('pedidos/eliminar')}}">Eliminar</a>
-                                <a class="dropdown-item" href="{{url('pedidos/finalizar')}}">Finalizar</a>
+                                <a class="dropdown-item" href="{{url('factura/registrar')}}">Registrar </a>
+                                <a class="dropdown-item" href="{{url('factura/actualizar')}}">Actualizar </a>
+                                <a class="dropdown-item" href="{{url('factura/eliminar')}}">Eliminar</a>
+                                <a class="dropdown-item" href="{{url('factura/listar')}}">Listar</a>
 
                             </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               Factura
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="{{url('factura/generar')}}">Generar </a>
-                                <a class="dropdown-item" href="{{url('factura/listar')}}">Listar </a>
-                                
-                            </li>
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -123,7 +114,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="{{url('catalogo/crear')}}">Crear </a>
-                                <a class="dropdown-item" href="{{url('catalogo/actualizar')}}">Actualizar </a>
+                                <a class="dropdown-item" href="{{url('catalogo/eliminar')}}">Eliminar </a>
                                 <a class="dropdown-item" href="{{url('catalogo/listar')}}">Listar </a>
                                 
                             </li>

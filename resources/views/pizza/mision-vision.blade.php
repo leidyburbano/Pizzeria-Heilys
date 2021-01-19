@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
-<div class=" container bg-danger">
+<div class=" container bg-dark">
     <h1>
-    <br>
-    <img src="https://www.chokdee.co.nz/wp-content/uploads/2017/03/Chokdee_Menu_banner_200.jpg" >
+    
+    <img src="https://static.depositphotos.com/storage/portfolio-cover/977/1105977.jpg?1592979535" >
         
        
         <div class="container">
@@ -25,21 +25,23 @@
                     <br><br>
                 <p class="lead">
                 Garantizar a nuestros accionistas el retorno positivo de su inversión y un margen adecuado de utilidad.</p>
-                    <br>
+                   
             </div>
             </div>
-
+          
+             <img src="https://static.depositphotos.com/storage/portfolio-cover/678/5700678.jpg?1593480322" >
+             <br><br>
             <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visión</h1>
-                <br>
+                <br><br>
                 <p class="lead">Posicionarnos para el 2021 como la mejor y más reconocida 
                 pzzeria de esta ciudad dentro del segmento de mercado de consumidores 
                 de clase media y alta, trabajando siempre para ser líderes en calidad, precio. </p>
             </div>
             </div>
 
-         <br>
+         <br><br>
        
             <footer class="bg-Dark text-white text-center text-lg-start">
             <!-- Grid container -->

@@ -1,8 +1,9 @@
 @extends('layouts.app')
 @section('content')
         
-    <div class=" container bg-danger">
+    <div class=" container bg-danger ">
         <h1>
+        
         <br>
         <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -13,7 +14,7 @@
             <br>
             <h1 class="display-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ven y disfruta de la mejor pizza Ipialeña  </h1>
-            <br>
+           
             <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Barrio Las Americas </h1>
             <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -25,6 +26,7 @@
             <div class="carousel-item active">
             <img src="https://cdn1.centralapp.com/api/v1/media/original/place-7368-yvi79ks9enrqedufcb1q.jpeg" class="d-block w-100" alt="...">
             </div>
+            
     </div>  
     <footer class="bg-Dark text-white text-center text-lg-start">
         <!-- Grid container -->

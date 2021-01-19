@@ -8,13 +8,11 @@ namespace App\Http\Controllers;
 
     class catalogoController extends Controller
     {
-
-        
         public function showCrear(){
             return view('catalogo.crear'); 
         }
-        public function showActualizar(){
-            return view('catalogo.actualizar');
+        public function showEliminar(){
+            return view('catalogo.eliminar');
         }
         
         public function showListar(){
