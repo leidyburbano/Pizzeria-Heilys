@@ -1,5 +1,20 @@
 @extends('master')
 @section('contenido') 
+<link href="{{ url('/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+        <style>
+            h5{
+                font-family: 'Kaushan Script', cursive;
+            }
+        </style>
+  
+<h5>  
+<br><br>
+<div class="container" style="background-color: #CFD8DC;">  
+    
+  
+  
     <br>
     <h1 class="text-center">Lista de Facturas</h1>
     <br>
@@ -25,7 +40,7 @@
                         <td> {{$c->clientes->Nombre}}</td>
                         <td> {{$c->Totalfac}}</td>
                         <td style="margin-left: 100px;"> 
-                            <a href="{{route('editarFac', $c->Idfac)}}"  class="btn btn-success">Editar</a> 
+                           
                             <a href="{{route('eliminarFac', $c->Idfac)}}"  class="btn btn-danger" >Eliminar</a>
                             <a href="{{route('detalleFac', $c->Idfac)}}"  class="btn btn-info" >Detalle</a>
                         </td>     
@@ -35,5 +50,6 @@
             </table>
         </div>
     
-    
+</div>
+<br><br><br>    
 @stop

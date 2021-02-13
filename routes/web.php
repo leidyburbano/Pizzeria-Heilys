@@ -18,14 +18,16 @@ use App\Http\Controllers\Facturas\FacturaController;
 |
 */
 
+
 Route::get('/', function () {
     return view('auth.login');
 });
 
+
 Route::get('/dashboard',[HomeController::class, 'inicio'])->middleware('auth')->name('dashboard');;
 require __DIR__.'/auth.php';
 
-//RUTAS PRODUCTO
+
 
 Route::get('producto/registro',[ProductoController::class, 'formregistro'])->middleware('auth');
 Route::POST('producto/registro',[ProductoController::class, 'registrar'])->middleware('auth');
@@ -38,7 +40,8 @@ Route::post('producto/actualizar/{Idpro}', [ProductoController::class, 'editar']
 
 Route::get('producto/eliminar/{Idpro}', [ProductoController::class, 'eliminar'])->name('eliminarpro');
 
-//RUTAS CLIENTE
+
+
 
 Route::get('cliente/registro',[ClienteController::class, 'formregistro'])->middleware('auth');
 Route::POST('cliente/registro',[ClienteController::class, 'registrar'])->middleware('auth');
@@ -51,7 +54,8 @@ Route::post('cliente/actualizar/{id}', [ClienteController::class, 'editar'])->na
 
 Route::get('cliente/eliminar/{id}', [ClienteController::class, 'eliminar'])->name('eliminarCli');
 
-//RUTAS USUARIO
+
+
 Route::get('usuario/registro',[UsuarioController::class, 'formregistro'])->middleware('auth');
 Route::POST('usuario/registro',[UsuarioController::class, 'registrar'])->middleware('auth');
 
@@ -63,7 +67,7 @@ Route::post('usuario/actualizar/{id}', [UsuarioController::class, 'editar'])->na
 
 Route::get('usuario/eliminar/{id}', [UsuarioController::class, 'eliminar'])->name('eliminarUsu');
 
-//RUTAS CATALOGO
+
 
 Route::get('catalogo/registro',[CatalogoController::class, 'formregistro'])->middleware('auth');
 Route::POST('catalogo/registro',[CatalogoController::class, 'registrar'])->middleware('auth');
@@ -81,7 +85,7 @@ Route::POST('catalogo/agregar/{Idcat}',[CatalogoController::class, 'agregar'])->
 
 Route::get('catalogo/visualizar/{Idcat}',[CatalogoController::class, 'visual'])->name('visualizarCat')->middleware('auth');
 
-//RUTAS FACTURA
+
 
 Route::get('factura/registro',[FacturaController::class, 'formregistro'])->middleware('auth');
 Route::POST('factura/registro',[FacturaController::class, 'registrar'])->middleware('auth');

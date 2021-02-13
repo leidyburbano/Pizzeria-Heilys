@@ -1,7 +1,20 @@
 @extends('master')
 @section('contenido') 
-    
-    <h1 class="text-center">Formulario de registro producto</h1>
+
+<link href="{{ url('/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+        <style>
+            h3{
+                font-family: 'Kaushan Script', cursive;
+            }
+        </style>
+  
+<h3>  
+<br>
+<div class="container" style="background-color: #D7CCC8;">   
+    <br>    
+    <h1 class="text-dark text-center">Registro de nuestros Clientes</h1>
 
     <div class="container"> 
     <form action="{{url('cliente/registro')}}" method="POST" >
@@ -42,5 +55,7 @@
         <br><br>
 
     </form>
+ </div>
+<h3>
 </div>
 @stop

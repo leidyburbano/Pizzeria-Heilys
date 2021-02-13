@@ -21,7 +21,7 @@
         <br>  
         <div class="input-group mb-3">
             <input type="text" class="form-control" value="{{$producto->valor}}" name="valorpro" placeholder="Valor Del Producto" aria-label="Username" aria-describedby="basic-addon1" required>
-        </div>        <br><br>
+        </div>        <br><br> 
         <button type="submit" class="btn btn-success" >Actualizar</button>
         <a href="{{url('producto/Lista')}}"  class="btn btn-danger">Cancelar</a>
         <br><br>

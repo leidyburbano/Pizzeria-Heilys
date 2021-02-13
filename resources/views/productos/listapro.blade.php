@@ -1,18 +1,32 @@
 @extends('master')
 @section('contenido') 
+
+<link href="{{ url('/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+        <style>
+            h1{
+                font-family: 'Kaushan Script', cursive;
+            }
+        </style>
+  
+<h1>   
     <br>
     <h1 class="text-center">Lista de productos</h1>
     <br>
     <div class="container" >
         <form class="d-flex" action="{{url('producto/buscar')}}" method="POST">
             @csrf
-            <input style="margin-left: 1000px;" class="form-control me-2" type="text" id="consultaPro" name="consultaPro" placeholder="Buscar" aria-label="buscar" style="max-width: 500px;">
-            <button type="submit" class="btn btn-outline-success" >Buscar</button>
+         <input style="margin-left: 1000px;" class="form-control me-2" type="text" id="consultaPro" name="consultaPro" placeholder="Buscar" aria-label="buscar" style="max-width: 500px;">
+         <h1>  <button type="submit" class="btn btn-outline-success" >Buscar</button></h1>
         </form>
     </div>
-    <div class="container" style="margin-top: 50px;">
+    <div class="container bg-dark" style="margin-top: 50px;">
+    <br>
         <div class="row">
+     
             @foreach($productos as $p)
+            
                 <div class="col-md-4">
                     <div class="card border-primary" style="width: 400px; height: 600px;" >
                         <img class="card-img-top" style="width: 390px;height: 350px;"  src="{{url("/img/$p->fotopro")}}" >
@@ -36,12 +50,12 @@
                     </div><br>
 
                 </div>
-                    
-            @endforeach
-                
+              
+            @endforeach       
         </div>
+    <br>
     </div>
-    
-    
-    
+</h1>
+
+
 @stop
